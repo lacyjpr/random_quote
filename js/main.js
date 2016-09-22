@@ -25,6 +25,10 @@ $(document).ready(function (){
 	getQuote();
 });
 
+function customEncodeURIComponent(URI) {
+	return encodeURIComponent(URI).replace(/'/g, "&apos");
+}
+
 $("#newQuote").on("click", getQuote);
 
 $("#tweet").on("click", function() {
