@@ -1,0 +1,10 @@
+body {
+	background-color: grey;
+}
+
+#quoteBox {
+	background-color: white;
+	margin-top: 150px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
