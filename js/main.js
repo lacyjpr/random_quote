@@ -32,5 +32,5 @@ function customEncodeURIComponent(URI) {
 $("#newQuote").on("click", getQuote);
 
 $("#tweet").on("click", function() {
-	window.open("https://twitter.com/intent/tweet?hashtags=quotes&text=" + CustomEncodeURIComponent(quote + "-" + author), "_blank");
+	window.open("https://twitter.com/intent/tweet?hashtags=quotes&text=" + customEncodeURIComponent(quote + "-" + author), "_blank");
 });
