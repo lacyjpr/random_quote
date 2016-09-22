@@ -29,4 +29,4 @@ $("#newQuote").on("click", getQuote);
 
 $("#tweet").on("click", function() {
 	window.open("https://twitter.com/intent/tweet?hashtags=quotes&text=" + encodeURIComponent(quote + "-" + author), "_blank");
-  });
+});
