@@ -25,12 +25,13 @@ $(document).ready(function (){
 	getQuote();
 });
 
-function customEncodeURIComponent(URI) {
-	return encodeURIComponent(URI).replace(/'/g, "&apos");
+function customEncode(URI) {
+	return encodeURIComponent(URI).replace(/'/g, "%27");
 }
 
 $("#newQuote").on("click", getQuote);
 
 $("#tweet").on("click", function() {
-	window.open("https://twitter.com/intent/tweet?hashtags=quotes&text=" + customEncodeURIComponent(quote + "-" + author), "_blank");
+	var text = quote + "-" + author
+	window.open("https://twitter.com/intent/tweet?hashtags=quotes&text=" + customEncode(text), "_blank");
 });
