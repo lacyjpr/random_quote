@@ -28,5 +28,5 @@ $(document).ready(function (){
 $("#newQuote").on("click", getQuote);
 
 $("#tweet").on("click", function() {
-	window.location.href="https://twitter.com/intent/tweet?hashtags=quotes&text=" + encodeURIComponent(quote + "-" + author);
+	window.open("https://twitter.com/intent/tweet?hashtags=quotes&text=" + encodeURIComponent(quote + "-" + author), "_blank");
   });
