@@ -15,19 +15,27 @@
 	</head>
 
 	<body>
-		<div class="jumbotron">
 			<div class="container">
 				<div class="row">
+					<h1 class="text-center">Random Quote Machine</h1>
+				</div><!--row-->
+				<div class="row">
 					<div id="quoteBox" class="col-md-4 col-md-offset-4">
-						<p id="quote" class="text-center">This is a test</p>
-						<p id="author" class="text-right">- Anon</p> 
+						<p id="quote" class="text-center"></p>
+						<p id="author" class="text-right"></p>
+						<div class=col-md-6>
+							<button type="button" class="btn btn-secondary" id="tweet">Tweet</button>
+						</div><!--col-md-6-->
+						<div class=col-md-6>
+							<button type="button" class="btn btn-secondary pull-right" id="newQuote">New Quote</button>
+						</div><!--col-md-6--> 
 					</div><!--quoteBox-->
 				</div><!--row-->
-			</div><!--container-->
-		<div><!--jumbotron-->
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+	<script src="js/main.js"></script>
 	</body>
 
 </html>
