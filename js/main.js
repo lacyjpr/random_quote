@@ -9,14 +9,16 @@ function getQuote() {
 		success: function(data) {
 			var post = data.shift(); // The data is an array of posts. Grab the first one.
 			$("#quote").html(post.content);
-			$("#author").text("-" + post.title);
+			$("#author").html("<p>" + "-" + post.title + "</p>");
 			quote = post.content;
 			quote = quote.replace("<p>", "");
 			quote = quote.replace("</p>", "");
 			author = post.title;
-
 		},
-		cache: false
+		cache: false,
+		error: function() {
+			$("#quote").html("Random Quotes is not responding, please try again later.");
+		}
 	});
 }
 
