@@ -1,9 +1,11 @@
 body {
 	background-color: grey;
+	color: white;
 }
 
 #quoteBox {
 	background-color: white;
+	color: black;
 	margin-top: 50px;
 	padding-top: 20px;
 	padding-bottom: 20px;
