@@ -5,10 +5,9 @@ var author = "";
 function getQuote() {
 	//credit: http://quotesondesign.com/
 	$.ajax({
-		url: "http://quotesondesign.com//wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1",
+		url: "https://quotesondesign.com//wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1",
 		success: function(data) {
 			var post = data.shift(); // The data is an array of posts. Grab the first one.
-			console.log(post);
 			$("#quote").html(post.content);
 			$("#author").text("-" + post.title);
 			quote = post.content;
