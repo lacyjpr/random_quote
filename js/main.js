@@ -25,13 +25,8 @@ $(document).ready(function (){
 	getQuote();
 });
 
-function customEncode(URI) {
-	return encodeURIComponent(URI).replace(/'/g, "%27");
-}
-
 $("#newQuote").on("click", getQuote);
 
 $("#tweet").on("click", function() {
-	var text = quote + "-" + author
-	window.open("https://twitter.com/intent/tweet?hashtags=quotes&text=" + customEncode(text), "_blank");
+	window.open("https://twitter.com/intent/tweet?hashtags=quotes&text=" + $("#quote").text() + " " + $("#author").text());
 });
