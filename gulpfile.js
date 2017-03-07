@@ -9,8 +9,8 @@ var gulp = require('gulp'),
 var paths = {
 	scripts: ['src/js/*.js'],
 	styles: ['src/css/*.css'],
-	content: ['src/*.html'],
-	copy: ['src/media/*.mp3']
+	content: ['src/*.html']
+	//copy: ['src/media/*.mp3']
 }
 
 // copy styles for critical
@@ -69,5 +69,5 @@ gulp.task('watch', function(){
 	gulp.watch('src/*.html', ['content']);
 });
 
-gulp.task('default', ['scripts', 'styles', 'content', 'copy', 'watch']);
+gulp.task('default', ['scripts', 'styles', 'content', 'watch']);
 
